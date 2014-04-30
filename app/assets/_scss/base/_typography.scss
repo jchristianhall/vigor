@@ -1,104 +1,49 @@
+// Sizes based on a major third scale with 18px base size
+// See type-scale.com
 body {
-  color: $base-font-color;
-  font-family: $base-font-family;
+  color: $base-color;
+  font-weight: 400;
   font-size: $base-font-size;
-  -webkit-font-smoothing: antialiased;
-  line-height: $base-line-height;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.45;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
-  line-height: 1.25em;
-  margin: 0;
-  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: $base-font-size * 2.25; // 16 * 2.25 = 36px
+  font-size: 2em;
 }
 
-h2 {
-  font-size: $base-font-size * 2; // 16 * 2 = 32px
-}
+h2 {font-size: 1.953em;}
 
-h3 {
-  font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
-}
+h3 {font-size: 1.563em;}
 
-h4 {
-  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
-}
+h4 {font-size: 1.25em;}
 
-h5 {
-  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
-}
-
-h6 {
-  font-size: $base-font-size;
-}
-
-p {
-  margin: 0 0 ($base-line-height * .5);
-}
+.small-font {font-size: 0.8em;}
 
 a {
-  color: $base-link-color;
-  text-decoration: none;
   @include transition(color 0.1s linear);
+  color: $accent-color;
+  text-decoration: none;
 
   &:hover {
-    color: $hover-link-color;
+    opacity: 0.5;
   }
 
   &:active, &:focus {
-    color: $hover-link-color;
     outline: none;
+    opacity: 0.5;
   }
-}
-
-hr {
-  border-bottom: 1px solid $base-border-color;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  margin: $base-line-height 0;
 }
 
 img {
   margin: 0;
   max-width: 100%;
-}
-
-abbr, acronym {
-  border-bottom: 1px dotted $base-border-color;
-  cursor: help;
-}
-
-address {
-  display: block;
-  margin: 0 0 ($base-line-height / 2);
-}
-
-hgroup {
-  margin-bottom: $base-line-height / 2;
-}
-
-del {
-  color: lighten($base-font-color, 15);
-}
-
-blockquote {
-  border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15);
-  margin: $base-line-height 0;
-  padding-left: $base-line-height / 2;
-}
-
-cite {
-  color: lighten($base-font-color, 25);
-  font-style: italic;
-
-  &:before {
-    content: '\2014 \00A0';
-  }
 }

@@ -1,43 +1,17 @@
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
-$sans-serif: $helvetica;
-$serif: $georgia;
-
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$base-font: 'Lato', sans-serif;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
-$base-font-size: 1em;
-$base-line-height: $base-font-size * 1.5;
-$base-border-radius: em(3);
+$base-font-size: 1.125em;
+$base-shadow: 0 1px 5px rgba(0,0,0,0.2);
 
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
-
-$blue: #477DCA;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #DDD;
-$light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
-
-// Body Color
-$base-body-color: white;
-
-//  Font Colors
-$base-font-color: $dark-gray;
-$base-accent-color: $blue;
-
-//  Text Link Colors
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
-
-// Border color
-$base-border-color: $light-gray;
-
-// Flash Colors
-$error-color: $light-red;
-$notice-color: $light-yellow;
-$success-color: $light-green;
+$base-color: rgba(52, 73, 94, 1);
+$accent-color: rgba(231, 139, 67, 1);
+$foreground-color: rgba(255, 255, 255, 1);
+$background-color: rgba(242, 242, 242, 1);
+$otherground-color: rgba(52, 73, 94, 0.1);
+$footer-color: rgba(44, 62, 80, 1);
