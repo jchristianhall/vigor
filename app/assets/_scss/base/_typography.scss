@@ -1,49 +1,21 @@
-// Sizes based on a major third scale with 18px base size
+// Sizes based on a major third scale with 16px base size
 // See type-scale.com
+
+// Type sizes
+///////////////////////////////////////////////////////////////////////////////
+$header-font-size: $base-font-size * 1.953;
+$nav-font-size: $base-font-size * 1.563;
+$title-font-size: $base-font-size * 1.25;
+$small-font-size: $base-font-size * 0.8;
+
+// Type elements
+///////////////////////////////////////////////////////////////////////////////
 body {
   color: $base-color;
   font-weight: 400;
   font-size: $base-font-size;
   font-family: 'Lato', sans-serif;
-  line-height: 1.45;
 }
 
-p {margin-bottom: 1.3em;}
-
-h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {font-size: 1.953em;}
-
-h3 {font-size: 1.563em;}
-
-h4 {font-size: 1.25em;}
-
-.small-font {font-size: 0.8em;}
-
-a {
-  @include transition(color 0.1s linear);
-  color: $accent-color;
-  text-decoration: none;
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active, &:focus {
-    outline: none;
-    opacity: 0.5;
-  }
-}
-
-img {
-  margin: 0;
-  max-width: 100%;
-}
+h1 { font-size: $header-font-size; }
+h3 { font-size: $title-font-size; }

@@ -114,6 +114,10 @@ nav {
         top: 2px;
       }
     }
+    .active {
+      background-color: $accent-color;
+      color: $foreground-color;
+    }
   }
 }
 
