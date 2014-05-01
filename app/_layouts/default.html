@@ -24,28 +24,41 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
+    <div class="page-wrap">
+
+      <header>
         <div class="header-container">
-            <div id="logo-container">
-                <div id="logo"></div>
-                <h1>Vigor</h1>
-            </div>
-            <div id="account-container">
-                <div id="avatar"></div>
-                <span>Hey Booker!</span>
-                <div class="icon cog-icon"></div>
-            </div>
+          <div id="logo-container">
+            <div id="logo"></div>
+            <h1>Vigor</h1>
+          </div>
+          <div id="account-container">
+            <div id="avatar"></div>
+            <span>Hey Booker!</span>
+            <div class="icon cog-icon"></div>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <nav id="nav-primary" class="nav-primary">
-    </nav>
+      <nav>
+        <ul>
+          <li><span class="icon sun-icon"></span>Today</li>
+          <li><span class="icon barbell-icon"></span>Exercise</li>
+          <li><span class="icon meter-icon"></span>Weight</li>
+          <li><span class="icon award-fill-icon"></span>Badges</li>
+          <li><span class="icon calendar-icon"></span>History</li>
+        </ul>
+      </nav>
 
-    <section id="content-primary" class="content-primary">
-      {{ content }}
-    </section>
+      <section id="content">
+        {{ content }}
+      </section>
 
-    <footer id="footer-primary" class="footer-primary">
+    </div>
+
+    <footer>
+      <div>About | Help | Careers | Contact</div>
+      <div>&copy; 2014 Columbia Internet Authority</div>
     </footer>
 
     <!--[if IE 8]>
