@@ -1,15 +1,5 @@
-// Sizes based on a major third scale with 16px base size
-// See type-scale.com
-
-// Type sizes
-///////////////////////////////////////////////////////////////////////////////
-$header-font-size: $base-font-size * 1.953;
-$nav-font-size: $base-font-size * 1.563;
-$title-font-size: $base-font-size * 1.25;
-$small-font-size: $base-font-size * 0.8;
-
-// Type elements
-///////////////////////////////////////////////////////////////////////////////
+/* Type elements
+ * -----------------------------------------------------------------------------*/
 body {
   color: $base-color;
   font-weight: 400;
@@ -18,4 +8,7 @@ body {
 }
 
 h1 { font-size: $header-font-size; }
-h3 { font-size: $title-font-size; }
+h3 {
+  font-size: $title-font-size;
+  padding: $base-padding;
+}

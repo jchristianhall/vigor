@@ -4,8 +4,6 @@
  * See the ToC in _application.scss
  */
 
-
-
 /* Bourbon & Neat
  * -----------------------------------------------------------------------------*/
 @import "bourbon/app/assets/stylesheets/bourbon";
@@ -27,16 +25,20 @@
 // @import "base/lists";
 // @import "base/flashes";
 @import "base/fonts";
-// @import "base/library";
+@import "base/library";
 @import "base/application";
 
 
 
 /* Components
  * -----------------------------------------------------------------------------*/
-// @import "component/modal";
-
-
+@import "component/today";
+@import "component/exercise";
+@import "component/add-exercise";
+@import "component/weight";
+@import "component/badges";
+@import "component/history";
+@import "component/settings";
 
 /* Pages
  * -----------------------------------------------------------------------------*/
