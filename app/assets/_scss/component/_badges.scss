@@ -1,0 +1,18 @@
+/* Left Column
+ * -----------------------------------------------------------------------------*/
+#badges-left {
+  @include span-columns(3 of 10);
+}
+
+/* Center Column
+ * -----------------------------------------------------------------------------*/
+#badges-center {
+  @include span-columns(3 of 10);
+}
+
+/* Right Column
+ * -----------------------------------------------------------------------------*/
+#badges-right {
+  @include span-columns(4 of 10);
+  .box { margin-right: 0; }
+}

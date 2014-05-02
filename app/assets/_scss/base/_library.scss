@@ -1,5 +1,21 @@
 .box {
   background-color: $foreground-color;
   box-shadow: $base-shadow;
-  margin-right: $base-padding;
+  margin: 0 $base-padding $base-padding 0;
+}
+.modal-container {
+  @include size(100%);
+  position: fixed;
+  z-index: 3;
+}
+.modal {
+  @include position(absolute, 50% 0 0 50%);
+  @include transform(translate(-50%, -50%));
+}
+.overlay {
+  @include size(100%);
+  position: fixed;
+  z-index: 2;
+  display: none;
+  background-color: rgba(0,0,0,0.4);
 }

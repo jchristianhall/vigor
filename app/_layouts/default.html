@@ -24,8 +24,14 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <!-- Modal content -->
+    {% include add-exercise.html %}
+    {% include settings.html %}
+    <div class="overlay"></div>
+
     <div class="page-wrap">
 
+      <!-- Header -->
       <header>
         <div class="header-container">
           <div id="logo-container">
@@ -40,6 +46,7 @@
         </div>
       </header>
 
+      <!-- Navigation -->
       <nav>
         <ul>
           <li class="active"><span class="icon sun-icon"></span>Today</li>
@@ -50,12 +57,14 @@
         </ul>
       </nav>
 
+      <!-- Main content -->
       <section id="content">
         {{ content }}
       </section>
 
     </div>
 
+    <!-- Footer -->
     <footer>
       <div>About | Help | Careers | Contact</div>
       <div>&copy; 2014 Columbia Internet Authority</div>

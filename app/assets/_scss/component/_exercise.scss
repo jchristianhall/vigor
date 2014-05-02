@@ -1,0 +1,12 @@
+/* Left Column
+ * -----------------------------------------------------------------------------*/
+#exercise-left {
+  @include span-columns(6 of 10);
+}
+
+/* Right Column
+ * -----------------------------------------------------------------------------*/
+#exercise-right {
+  @include span-columns(4 of 10);
+  .box { margin-right: 0; }
+}

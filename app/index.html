@@ -1,30 +1,10 @@
 ---
-layout: section
-title: Today | Vigor
-titleid: today
+layout: default
+title: Vigor
 ---
 
-<!-- Today -->
-<section id="today-left">
-  <div class="box" id="todo-box">
-    <h3>To Do</h3>
-  </div>
-</section>
-
-<section id="today-center">
-  <div class="box" id="today-goal-box">
-    <h3>Current Goal</h3>
-  </div>
-  <div class="box" id="today-weight-box">
-    <h3>Today's Weight</h3>
-  </div>
-</section>
-
-<section id="today-right">
-  <div class="box" id="today-reminders-box">
-    <h3>Reminders</h3>
-  </div>
-  <div class="box" id="today-badges-box">
-    <h3>Recent Badges</h3>
-  </div>
-</section>
+{% include today.html %}
+{% include exercise.html %}
+{% include weight.html %}
+{% include badges.html %}
+{% include history.html %}

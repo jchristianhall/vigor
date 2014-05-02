@@ -95,6 +95,7 @@ nav {
     @include row(table);
     @include pad(0);
     list-style: none;
+    box-shadow: $base-shadow;
     li {
       @include span-columns(2);
       @include transition(all 0.3s ease-in-out);
