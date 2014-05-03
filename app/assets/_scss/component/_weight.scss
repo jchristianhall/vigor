@@ -6,7 +6,6 @@
 }
 #weight-goal-box {
 	h3 {
-		margin: 0;
 		display: inline-block;
 	}
 }
@@ -20,12 +19,12 @@
 }
 
 #add-weight-goal {
+  font-size: 32px;
+  font-weight: bold;
+  color: $accent-color;
+  cursor: pointer;
 	float: right;
-	cursor: pointer;
 	padding: 16px $base-padding 0 0;
-	color: $accent-color;
-	font-size: 32px;
-	font-weight: bold;
 }
 
 #weight-graph {
