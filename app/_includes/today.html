@@ -1,23 +1,38 @@
 <!-- Today -->
 <section id="today">
   <section id="today-left">
-    <div class="box" id="todo-box">
+    <div class="box" id="today-todo-box">
       <h3>To Do</h3>
+      <div class="select-container">
+        <select>
+          <option>Today</option>
+        </select>
+        <div class="icon arrow-down-icon"></div>
+      </div>
     </div>
   </section>
 
   <section id="today-center">
     <div class="box" id="today-goal-box">
       <h3>Current Goal</h3>
+      <div class="box-text">150 lbs by 3/20/13</div>
     </div>
     <div class="box" id="today-weight-box">
       <h3>Today's Weight</h3>
+      <div class="box-text">Enter a weight for today:</div>
+      <form id="today-weight">
+        <input type="text" name="new-weight" placeholder="Weight (lbs)">
+        <input type="text" name="date" placeholder="3/15/13">
+        <input type="text" name="time" placeholder="1:05am">
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </section>
 
   <section id="today-right">
     <div class="box" id="today-reminders-box">
       <h3>Reminders</h3>
+      <div class="box-text">No new reminders</div>
     </div>
     <div class="box" id="today-badges-box">
       <h3>Recent Badges</h3>
