@@ -20,7 +20,6 @@
 }
 
 #add-weight-goal {
-	display:inline-block;
 	float: right;
 	cursor: pointer;
 	padding: 16px $base-padding 0 0;
@@ -29,7 +28,16 @@
 	font-weight: bold;
 }
 
+#weight-graph {
+  @include retina-image('../img/weight-graph', 640px 301px);
+  @include size(640px 301px);
+  margin: 0 0 $base-padding $base-padding;
+}
 
+#graph-range-info {
+  font-size: $small-font-size;
+  padding: $base-padding 0 0 $base-padding;
+}
   
 /* Right Column
  * -----------------------------------------------------------------------------*/
