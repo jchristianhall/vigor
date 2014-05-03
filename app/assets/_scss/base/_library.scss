@@ -1,7 +1,8 @@
 .box {
+  margin: 0 $base-padding $base-padding 0;
   background-color: $foreground-color;
   box-shadow: $base-shadow;
-  margin: 0 $base-padding $base-padding 0;
+  padding: $base-padding $base-padding 0 $base-padding;
 }
 .modal-container {
   @include size(100%);

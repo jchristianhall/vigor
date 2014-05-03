@@ -1,3 +1,12 @@
+/* Colors
+ * -----------------------------------------------------------------------------*/
+$base-color: rgba(52, 73, 94, 1);
+$accent-color: rgba(231, 139, 67, 1);
+$foreground-color: rgba(255, 255, 255, 1);
+$background-color: rgba(242, 242, 242, 1);
+$otherground-color: rgba(52, 73, 94, 0.1);
+$footer-color: rgba(44, 62, 80, 1);
+
 /* Typography
  * -----------------------------------------------------------------------------*/
 $base-font: 'Lato', sans-serif;
@@ -7,6 +16,7 @@ $base-font: 'Lato', sans-serif;
 $grid-columns: 10;
 
 $base-padding: 20px;
+$field-padding: 10px;
 
 // Sizes based on a major third scale with 16px base size
 // See type-scale.com
@@ -17,12 +27,5 @@ $title-font-size: $base-font-size * 1.25;
 $small-font-size: $base-font-size * 0.8;
 
 $base-shadow: 0 1px 2px rgba(0,0,0,0.1);
-
-/* Colors
- * -----------------------------------------------------------------------------*/
-$base-color: rgba(52, 73, 94, 1);
-$accent-color: rgba(231, 139, 67, 1);
-$foreground-color: rgba(255, 255, 255, 1);
-$background-color: rgba(242, 242, 242, 1);
-$otherground-color: rgba(52, 73, 94, 0.1);
-$footer-color: rgba(44, 62, 80, 1);
+$base-border: 1px solid $base-color;
+$active-border: 1px solid $accent-color;
