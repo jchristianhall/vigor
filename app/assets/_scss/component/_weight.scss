@@ -2,11 +2,39 @@
  * -----------------------------------------------------------------------------*/
 #weight-left {
   @include span-columns(3 of 10);
+
+}
+#weight-goal-box {
+	h3 {
+		margin: 0;
+		display: inline-block;
+	}
+}
+		
+#weight-current-goal {
+	padding: 0 0 $base-padding $base-padding;
 }
 
+#enter-weight {
+	padding-left: $base-padding;
+}
+
+#add-weight-goal {
+	display:inline-block;
+	float: right;
+	cursor: pointer;
+	padding: 16px $base-padding 0 0;
+	color: $accent-color;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+
+  
 /* Right Column
  * -----------------------------------------------------------------------------*/
 #weight-right {
   @include span-columns(7 of 10);
   .box { margin-right: 0; }
 }
+
