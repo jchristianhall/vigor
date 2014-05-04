@@ -21,3 +21,7 @@ h3 {
   margin: 0;
   padding: 0 $base-padding $base-padding 0;
 }
+.badge-text {
+  @include position(relative, -13px 0 0 0);
+  display: inline-block;
+}
