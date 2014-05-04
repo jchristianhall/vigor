@@ -9,7 +9,7 @@ body {
 
 h1 { font-size: $header-font-size; }
 h3 {
-  padding-bottom: $base-padding;
+  padding: $base-padding;
   font-size: $title-font-size;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -17,5 +17,5 @@ h3 {
 
 .box-text {
   margin: 0;
-  padding-bottom: $base-padding;
+  padding: 0 $base-padding $base-padding $base-padding;
 }
