@@ -1,6 +1,6 @@
 /* Input
  * -----------------------------------------------------------------------------*/
-input {
+input[type="text"] {
   @include appearance(none);
   @include transition(border 0.25s ease-in-out);
   margin-bottom: $base-padding;
