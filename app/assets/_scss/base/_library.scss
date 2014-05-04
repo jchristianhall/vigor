@@ -1,3 +1,7 @@
+ul {
+  padding: 0;
+  list-style: none;
+}
 .box {
   margin: 0 $base-padding $base-padding 0;
   background-color: $foreground-color;
@@ -6,11 +10,19 @@
 .box-content {
   padding: $base-padding $base-padding 0 $base-padding;
 }
+.box-row {
+  padding: $field-padding $base-padding;
+  background-color: $table-row-color;
+  &:nth-child(2n) {
+    background-color: $foreground-color;
+  }
+}
 .box-base {
   background-color: $otherground-color;
 }
 .badge {
   @include size(40px);
+  display: inline-block;
   margin-right: $field-padding;
 }
 .modal-container {
