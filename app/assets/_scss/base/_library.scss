@@ -1,8 +1,15 @@
 .box {
   margin: 0 $base-padding $base-padding 0;
+  padding: $base-padding $base-padding 0 $base-padding;
   background-color: $foreground-color;
   box-shadow: $base-shadow;
-  padding: $base-padding $base-padding 0 $base-padding;
+}
+.box-base {
+  background-color: $otherground-color;
+}
+.badge {
+  @include size(40px);
+  margin-right: $field-padding;
 }
 .modal-container {
   @include size(100%);

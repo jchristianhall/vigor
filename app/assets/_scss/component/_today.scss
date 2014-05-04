@@ -4,19 +4,56 @@
   @include span-columns(4 of 10);
 }
 #today-todo-box {
+  padding: 0;
   h3 {
     display: inline-block;
+    padding: $base-padding;
   }
   .select-container {
     float: right;
-    margin-top: -5px;
+    margin: 13px 15px 0 0;
   }
+  .box-base {
+    h3 {
+      display: block;
+      padding-bottom: $field-padding;
+    }
+    .box-text {
+      @include position(relative, -13px 0 0 0);
+      display: inline-block;
+    }
+  }
+}
+#badge1 {
+  @include retina-image('../img/badge1', 40px 40px);
+  display: inline-block;
+  margin-left: $base-padding;
 }
 
 /* Center Column
  * -----------------------------------------------------------------------------*/
 #today-center {
   @include span-columns(3 of 10);
+}
+#today-weight-box {
+  padding: 0;
+  h3 {
+    display: inline-block;
+    padding: $base-padding;
+  }
+  .box-text {
+    display: inline-block;
+    padding: 0 $base-padding $base-padding $base-padding;
+  }
+  .box-base {
+    h3 {
+      display: block;
+      padding-bottom: $field-padding;
+    }
+  }
+}
+#today-weight {
+  padding: 0 $base-padding;
 }
 
 /* Right Column
