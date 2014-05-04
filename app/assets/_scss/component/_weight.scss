@@ -7,15 +7,20 @@
 
 #weight-goal-box {
   padding-bottom: $base-padding;
+  div {
+    padding-left: $base-padding;
+  }
 	h3 {
 		display: inline-block;
 	}
-  .icon {
+  .plus-icon {
+    @include transition(opacity 0.25s ease-in-out);
     font-size: 32px;
     font-weight: bold;
     color: $accent-color;
     cursor: pointer;
     float: right;
+    margin: 16px $base-padding $base-padding 0;
     &:hover {
       opacity: 0.8;
     }
@@ -23,6 +28,10 @@
 }
 
 #weight-new-box {
+  padding: 0 $base-padding 0 $base-padding;
+  h3 {
+    padding: $base-padding 0 $base-padding 0;
+  }
   div {
     padding-bottom: $base-padding;
   }
@@ -36,10 +45,17 @@
 }
 
 #weight-progress-box {
+  padding-left: $base-padding;
+  h3 {
+    padding: $base-padding 0 $base-padding 0;
+  }
   input {
     width: 6em;
     margin: 0 0 $base-padding $base-padding;
     text-align: center;
+  }
+  .select-container {
+    display: inline-block;
   }
 }
 
