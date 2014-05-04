@@ -3,6 +3,9 @@
   background-color: $foreground-color;
   box-shadow: $base-shadow;
 }
+.box-content {
+  padding: $base-padding $base-padding 0 $base-padding;
+}
 .box-base {
   background-color: $otherground-color;
 }

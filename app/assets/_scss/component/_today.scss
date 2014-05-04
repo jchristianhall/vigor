@@ -9,12 +9,12 @@
   }
   .select-container {
     float: right;
-    margin: 13px 15px 0 0;
+    margin-top: -7px;
   }
   .box-base {
     h3 {
       display: block;
-      padding-bottom: $field-padding;
+      padding: $base-padding $base-padding $field-padding $base-padding;
     }
     .box-text {
       @include position(relative, -13px 0 0 0);
@@ -38,18 +38,16 @@
   h3 {
     display: inline-block;
   }
-  .box-text {
-    display: inline-block;
-  }
   .box-base {
     h3 {
       display: block;
-      padding-bottom: $field-padding;
+      padding: $base-padding $base-padding $field-padding $base-padding;
+    }
+    .box-text {
+      display: inline-block;
+      padding-left: $base-padding;
     }
   }
-}
-#today-weight {
-  padding: 0 $base-padding;
 }
 
 /* Right Column
