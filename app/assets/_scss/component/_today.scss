@@ -19,6 +19,7 @@
     .box-text {
       @include position(relative, -13px 0 0 0);
       display: inline-block;
+      padding-left: 0;
     }
   }
 }
