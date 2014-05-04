@@ -4,10 +4,8 @@
   @include span-columns(4 of 10);
 }
 #today-todo-box {
-  padding: 0;
   h3 {
     display: inline-block;
-    padding: $base-padding;
   }
   .select-container {
     float: right;
@@ -36,14 +34,11 @@
   @include span-columns(3 of 10);
 }
 #today-weight-box {
-  padding: 0;
   h3 {
     display: inline-block;
-    padding: $base-padding;
   }
   .box-text {
     display: inline-block;
-    padding: 0 $base-padding $base-padding $base-padding;
   }
   .box-base {
     h3 {
