@@ -4,43 +4,52 @@
   @include span-columns(3 of 10);
 
 }
+
 #weight-goal-box {
+  padding-bottom: $base-padding;
 	h3 {
 		display: inline-block;
 	}
-}
-		
-#weight-current-goal {
-	padding: 0 0 $base-padding $base-padding;
-}
-
-#enter-weight {
-	padding-left: $base-padding;
-}
-
-#add-weight-goal {
-  font-size: 32px;
-  font-weight: bold;
-  color: $accent-color;
-  cursor: pointer;
-	float: right;
-	padding: 16px $base-padding 0 0;
+  .icon {
+    font-size: 32px;
+    font-weight: bold;
+    color: $accent-color;
+    cursor: pointer;
+    float: right;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 
-#weight-graph {
-  @include retina-image('../img/weight-graph', 640px 301px);
-  @include size(640px 301px);
-  margin: 0 0 $base-padding $base-padding;
+#weight-new-box {
+  div {
+    padding-bottom: $base-padding;
+  }
 }
 
-#graph-range-info {
-  font-size: $small-font-size;
-  padding: $base-padding 0 0 $base-padding;
-}
-  
 /* Right Column
  * -----------------------------------------------------------------------------*/
 #weight-right {
   @include span-columns(7 of 10);
   .box { margin-right: 0; }
+}
+
+#weight-progress-box {
+  input {
+    width: 6em;
+    margin: 0 0 $base-padding $base-padding;
+    text-align: center;
+  }
+}
+
+#weight-graph {
+  @include retina-image('../img/weight-graph', 640px 301px);
+  @include size(640px 301px);
+  margin-bottom: $base-padding;
+}
+
+#graph-range-info {
+  font-size: $small-font-size;
+  padding-bottom: 2px;
 }

@@ -3,26 +3,16 @@
   <section id="weight-left">
     <div class="box" id="weight-goal-box">
       <h3>Current Goal</h3>
-      <div class="icon plus-icon" id="add-weight-goal"></div>
-      <div id="weight-current-goal">
-        135 lbs by 3/20/13
-      </div>
+      <div class="icon plus-icon"></div>
+      <div>135 lbs by 3/20/13</div>
     </div>
     <div class="box" id="weight-new-box">
       <h3>New Weight</h3>
-      <div id="enter-weight">Enter a new weight:</div>
-      <div class="input" id="weight-input">
-        Weight (lbs)
-      </div>
-      <div class="input" id="date-input">
-        3/15/13
-      </div>
-      <div class="input" id="time-input">
-        1:05am
-      </div>
-      <div class="button" id="weight-submit">
-        Submit
-      </div>
+      <div>Enter a new weight:</div>
+      <input type="text" placeholder="Weight (lbs)"></input>
+      <input type="text" placeholder="Date"></input>
+      <input type="text" placeholder="Time"></input>
+      <button type="submit">Submit</button>
     </div>
   </section>
   <section id="weight-right">
@@ -32,12 +22,13 @@
       <div id="graph-range-info">
         Range:
       </div>
-      <div class="input" id="graph-range-size">
-      </div>
-      <div class="input" id="graph-range-begin">
-      </div>
-      <div class="input" id="graph-range-end">
-      </div>
+      <select class="select-container">
+        <option value="week">This Week</option>
+        <option value="month">This Month</option>
+        <option value="year">This Year</option>
+      </select>
+      <input class="input" type="text" value="3/9/14"></input>
+      <input class="input" type="text" value="3/14/14"></input>
     </div>
   </section>
 </section>
