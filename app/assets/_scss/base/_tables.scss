@@ -2,21 +2,36 @@ table {
   border-collapse: collapse;
   table-layout: fixed;
   width: 100%;
-  padding: $base-padding;
 }
 
-tbody {
-  width: 100%;
+tr, td, th {
+  padding: $base-padding;
+  vertical-align: middle;
 }
 
 th {
   font-weight: bold;
   text-align: left;
+  background-color: $otherground-color;
 }
 
 td {
+  .icon {
+    @include transition(opacity 0.25s ease-in);
+    display: inline-block;
+    font-size: 25px;
+    color: $accent-color;
+    margin-right: $field-padding;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+
+    }
+  }
 }
 
-tr, td, th {
-  vertical-align: middle;
+tr {
+    &:nth-child(odd) {
+    background-color: $table-row-color;
+  }
 }

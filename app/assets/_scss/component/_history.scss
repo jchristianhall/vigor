@@ -2,14 +2,28 @@
  * -----------------------------------------------------------------------------*/
 #history-left {
   @include span-columns(8 of 10);
-  padding-left: $base-padding;
   h3 {
     display: inline-block;
   }
   .select-container {
     display: inline-block;
     float: right;
-    margin: 13px $base-padding 0 0;
+    margin: 13px $base-padding 13px 0;
+    width: 175px;
+  }
+}
+
+#history-exercise-box {
+  h3 {
+    padding: $base-padding;
+  }
+}
+
+tr {
+  td {
+    .no-attachment {
+      color: $base-color;
+    }
   }
 }
 
@@ -18,4 +32,22 @@
 #history-right {
   @include span-columns(2 of 10);
   .box { margin-right: 0; }
+  h3 {
+    padding: $base-padding;
+  }
+}
+
+#goal-info {
+  display: inline-block;
+  padding-bottom: $base-padding;
+  h3 {
+    padding: 0;
+  }
+}
+
+#weight-badge {
+  @include retina-image('../img/badge8', 40px 40px);
+  @include size(40px 40px);
+  margin: $base-padding $base-padding 0 $base-padding;
+  display: inline-block;
 }
