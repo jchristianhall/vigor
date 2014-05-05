@@ -1,22 +1,48 @@
 table {
   border-collapse: collapse;
-  margin: ($base-line-height / 2) 0;
   table-layout: fixed;
   width: 100%;
 }
 
+tr, td, th {
+  padding: $base-padding;
+  vertical-align: middle;
+}
+
 th {
-  border-bottom: 1px solid darken($base-border-color, 15%);
   font-weight: bold;
-  padding: ($base-line-height / 2) 0;
   text-align: left;
+  background-color: $otherground-color;
+  span {
+    display: inline-block;
+    &:hover {
+    cursor: pointer;
+    }
+  }
+  .filter-arrow {
+    @include retina-image('../img/select-arrow', 15px 10px);
+    @include size(15px 10px);
+    display: inline-block;
+    margin-left: 5px;
+  }
 }
 
 td {
-  border-bottom: 1px solid $base-border-color;
-  padding: ($base-line-height / 2) 0;
+  .icon {
+    @include transition(opacity 0.25s ease-in);
+    display: inline-block;
+    font-size: 25px;
+    color: $accent-color;
+    margin-right: $field-padding;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
 }
 
-tr, td, th {
-  vertical-align: middle;
+tr {
+    &:nth-child(odd) {
+    background-color: $table-row-color;
+  }
 }
