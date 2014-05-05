@@ -41,7 +41,7 @@
     }
   }
 }
-#badge1 {
+.badge1 {
   @include retina-image('../img/badge1', 40px 40px);
   margin-left: $base-padding;
 }
@@ -73,9 +73,9 @@
   @include span-columns(3 of 10);
   .box { margin-right: 0; }
 }
-#badge2 {
+.badge2 {
   @include retina-image('../img/badge2', 40px 40px);
 }
-#badge3 {
+.badge3 {
   @include retina-image('../img/badge3', 40px 40px);
 }
