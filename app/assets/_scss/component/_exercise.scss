@@ -4,9 +4,68 @@
   @include span-columns(6 of 10);
 }
 
+#exercise-list-box {
+	padding: $base-padding;
+
+	h3 {
+    	display: inline-block;
+  	}
+  	.plus-icon {
+	    @include transition(opacity 0.25s ease-in-out);
+	    font-size: 32px;
+	    font-weight: bold;
+	    color: $accent-color;
+	    cursor: pointer;
+	    float: right;
+	    margin: -4px 0 0 0;
+	    padding-left: .6em;
+	    &:hover {
+	      opacity: 0.8;
+    }
+  }
+  .box-text {
+      display: inline-block;
+      padding-left: $base-padding;
+    }
+}
+
+#exercise-select {
+	display: inline-block;
+	float: right;
+	margin-top: -7px;
+}
+
+//#edit {
+  //@include retina-image('../img/badge2', 40px 40px);
+//}
+
+//#delete {
+  //@include retina-image('../img/badge2', 40px 40px);
+//}
+
 /* Right Column
  * -----------------------------------------------------------------------------*/
 #exercise-right {
   @include span-columns(4 of 10);
   .box { margin-right: 0; }
 }
+
+#exercise-overview-box {
+  padding: $base-padding;
+  input {
+    width: 4em;
+    text-align: center;
+  }
+  .select-container {
+    text-align: center;
+  }
+}
+
+
+
+#exercise-graph {
+  @include retina-image('../img/exercise-graph', 340px 216px);
+  @include size(340px 216px);
+  margin-bottom: $base-padding;
+}
+
