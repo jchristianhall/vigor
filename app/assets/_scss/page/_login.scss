@@ -1,0 +1,52 @@
+#login {
+  @include size(100%);
+  background: url('../img/splash.png') no-repeat center center fixed;
+  background-size: cover;
+}
+.login-box {
+  @include size(350px auto);
+  @include transform(translateY(150px));
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(52, 73, 94, 0.9);
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
+  color: $foreground-color;
+  input {
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+  .forgot {
+    @include transition(color 0.25s ease-in-out);
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: $small-font-size;
+    cursor: pointer;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  button {
+    margin-bottom: 0;
+    padding: 15px;
+    width: 49%;
+    &:nth-child(5) {
+      background-color: rgb(237, 239, 241);
+      color: $base-color;
+    }
+    &:last-child {
+      float: right;
+    }
+  }
+}
+.login-logo-container {
+  margin: 0 auto 20px auto;
+  width: 150px;
+  .logo {
+    margin: 0;
+  }
+  h1 {
+    @include position(relative, -8px 0 0 0);
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
+}
