@@ -49,16 +49,16 @@ header {
     letter-spacing: 0.1em;
   }
 }
-#logo-container {
+.logo-container {
   @include span-columns(5);
 }
-#logo {
+.logo {
   @include retina-image('../img/logo', 43px 41px);
   @include size(43px 41px);
   display: inline-block;
   margin-top: $base-padding;
 }
-#account-container {
+.account-container {
   @include span-columns(2);
   @include shift(3);
   float: right;
@@ -68,7 +68,7 @@ header {
     margin-left: 10px;
   }
 }
-#avatar {
+.avatar {
   @include retina-image('../img/avatar', 39px 39px);
   @include size(39px 39px);
   display: inline-block;
