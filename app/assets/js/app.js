@@ -2,8 +2,8 @@ $(document).ready(function () {
   'use strict';
 
   // Visibility Controls
-  //$('#today').hide();
-  $('#exercise').hide();
+  $('#today').hide();
+  //$('#exercise').hide();
   $('#weight').hide();
   $('#badges').hide();
   $('#history').hide();
