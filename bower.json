@@ -8,7 +8,8 @@
     "modernizr": "~2.7.1",
     "jquery": "~2.0.3",
     "selectivizr": "~1.0.2",
-    "respond": "~1.4.2"
+    "respond": "~1.4.2",
+    "Chart.js": "git@github.com:Regaddi/Chart.js.git"
   },
   "devDependencies": {}
 }

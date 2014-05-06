@@ -41,11 +41,17 @@
     display: inline-block;
   }
 }
-
+/*
 #weight-graph {
   @include retina-image('../img/weight-graph', 640px 301px);
   @include size(640px 301px);
   margin-bottom: $base-padding;
+}
+*/
+
+#weight-graph {
+  width: 601px;
+  height: auto;
 }
 
 #graph-range-info {
