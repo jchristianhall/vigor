@@ -43,4 +43,9 @@ $(document).ready(function () {
     $('#settings').fadeIn();
     $('.overlay').fadeIn();
   });
+
+  $('#exercise-list-box .plus-icon').click(function () {
+    $('#add-exercise').fadeIn();
+    $('.overlay').fadeIn();
+  });
 });
