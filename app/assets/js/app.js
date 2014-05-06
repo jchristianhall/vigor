@@ -134,7 +134,16 @@ var options = {
       strokeColor : "rgba(231, 139, 67, 1)",
       pointColor : "rgba(231, 139, 67, 1)",
       pointStrokeColor : "rgba(231, 139, 67, 1)",
-      data : [130,135,131,132,130,140,135]
+      data : [130,135,131,132,130,140,135],
+      mouseover: function(data) {
+          console.log(data);
+          console.log('over: look at me im in the data code!')
+      },
+
+      mouseout: function(data) {
+          console.log(data);
+          console.log('out: ook at me im in the data code!')
+      }
     }]
   }
 
