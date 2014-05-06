@@ -24,6 +24,7 @@
 
 /* Foundation
  * -----------------------------------------------------------------------------*/
+* {margin: 0; padding: 0; border: 0;}
 html {
   height: 100%;
   -webkit-font-smoothing: antialiased;
@@ -94,6 +95,7 @@ header {
  * -----------------------------------------------------------------------------*/
 nav {
   @include outer-container();
+  padding: $base-padding 0;
   ul {
     @include span-columns(10);
     @include row(table);

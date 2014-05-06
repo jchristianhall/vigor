@@ -1,6 +1,9 @@
 # Vigor
 
-[Describe the project.]
+This is a project I put together for my final HCI course. Time
+constraints resulted in the code being pretty rough, and some things
+I wanted to implement couldn't be done in time. Maybe I'll revisit
+this project in the future.
 
 ## Project Setup
 This project utilizes Playbook, reference Playbook's [setup guide](https://github.com/centresource/generator-playbook#get-started).
@@ -19,11 +22,3 @@ This project utilizes Playbook, reference Playbook's [setup guide](https://githu
 - Check source: `grunt check`
 - Run tests: `grunt test`
 - Build for production: `grunt build`
-
-## Bootstrap Components
-
-### CSS
-- None
-
-### JavaScripts
-- None
