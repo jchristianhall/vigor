@@ -60,6 +60,9 @@
  * -----------------------------------------------------------------------------*/
 .modal-container {
   @include size(100%);
+  @include media($alpha) {
+    position: absolute;
+  }
   position: fixed;
   z-index: 3;
   display: none;
@@ -67,6 +70,10 @@
 .modal {
   @include position(absolute, 50% 0 0 50%);
   @include transform(translate(-50%, -50%));
+  @include media($alpha) {
+    @include position(absolute, $base-padding 0 0 0);
+    @include transform(translate(-50%, 0));
+  }
   padding: $base-padding;
 }
 .overlay {

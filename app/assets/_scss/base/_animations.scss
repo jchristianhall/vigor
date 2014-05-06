@@ -1,0 +1,20 @@
+/* Animations
+ * -----------------------------------------------------------------------------*/
+@include keyframes(fade) {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@include keyframes(slide) {
+  0% {
+    @include transform(translateY(30px));
+    opacity: 0;
+  }
+  100% {
+    @include transform(translateY(0px));
+    opacity: 1;
+  }
+}
+
+.slide {
+  @include animation(slide 1s ease-in-out);
+}

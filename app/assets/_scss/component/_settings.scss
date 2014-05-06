@@ -10,6 +10,7 @@
   position: relative;
 }
 .settings-buttons {
+  position: relative;
   margin: 0 auto;
   width: 400px;
 }
@@ -18,6 +19,10 @@
   width: 180px;
 }
 #settings-cancel {
+  @include position(absolute, 0 20px 0 0);
+  @include media($alpha) {
+    right: 0px;
+  }
   margin-bottom: 0;
   width: 180px;
 }
@@ -26,6 +31,11 @@
  * -----------------------------------------------------------------------------*/
 #settings-left {
   @include span-columns(5 of 10);
+  @include media($alpha) {
+    @include span-columns(10);
+    float: left;
+    padding-right: 0;
+  }
   padding-right: $base-padding;
 }
 .settings-avatar {
@@ -60,6 +70,11 @@
   input {
     margin-bottom: $field-padding;
     width: 180px;
+    &:last-child {
+      @include media($alpha) {
+        @include position(absolute, 0px 0px 0 0);
+      }
+    }
   }
 }
 
@@ -67,6 +82,10 @@
  * -----------------------------------------------------------------------------*/
 #settings-right {
   @include span-columns(5 of 10);
+  @include media($alpha) {
+    @include span-columns(10);
+    float: left;
+  }
   padding: 0;
   .settings-row:nth-child(3) {
     margin-top: 18px;

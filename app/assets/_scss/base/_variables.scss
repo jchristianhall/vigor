@@ -14,10 +14,12 @@ $base-font: 'Lato', sans-serif;
 
 /* Sizes
  * -----------------------------------------------------------------------------*/
-$grid-columns: 10;
-
 $base-padding: 20px;
 $field-padding: 10px;
+
+$alpha: new-breakpoint(max-width 1600px);
+$beta: new-breakpoint(max-width 1024px);
+$gamma: new-breakpoint(max-width 480px);
 
 // Sizes based on a major third scale with 16px base size
 // See type-scale.com
