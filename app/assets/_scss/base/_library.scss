@@ -2,6 +2,9 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+/* Box
+ * -----------------------------------------------------------------------------*/
 .box {
   margin: 0 $base-padding $base-padding 0;
   background-color: $foreground-color;
@@ -20,11 +23,46 @@ ul {
 .box-base {
   background-color: $otherground-color;
 }
+
+/* Badges
+ * -----------------------------------------------------------------------------*/
 .badge {
   @include size(40px);
   display: inline-block;
   margin-right: $field-padding;
 }
+.progress-bar {
+  @include position(relative, 0 0 -10px -20px);
+  height: 5px;
+  background-color: $accent-color;
+}
+.badge1 {
+  @include retina-image('../img/badge1', 40px 40px);
+}
+.badge2 {
+  @include retina-image('../img/badge2', 40px 40px);
+}
+.badge3 {
+  @include retina-image('../img/badge3', 40px 40px);
+}
+.badge4 {
+  @include retina-image('../img/badge4', 40px 40px);
+}
+.badge5 {
+  @include retina-image('../img/badge5', 40px 40px);
+}
+.badge6 {
+  @include retina-image('../img/badge6', 40px 40px);
+}
+.badge7 {
+  @include retina-image('../img/badge7', 40px 40px);
+}
+.badge8 {
+  @include retina-image('../img/badge8', 40px 40px);
+}
+
+/* Modals
+ * -----------------------------------------------------------------------------*/
 .modal-container {
   @include size(100%);
   position: fixed;
