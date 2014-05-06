@@ -140,9 +140,14 @@ nav {
 }
 #content {
   @include outer-container();
+  min-height: 600px;
   & > section {
     @include span-columns(10);
     @include row(table);
+    display: none;
+  }
+  #today {
+    display: block;
   }
 }
 

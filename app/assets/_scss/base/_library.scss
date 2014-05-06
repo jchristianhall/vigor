@@ -62,6 +62,7 @@
   @include size(100%);
   position: fixed;
   z-index: 3;
+  display: none;
 }
 .modal {
   @include position(absolute, 50% 0 0 50%);

@@ -1,15 +1,6 @@
 $(document).ready(function () {
   'use strict';
 
-  // Visibility Controls
-  //$('#today').hide();
-  $('#exercise').hide();
-  $('#weight').hide();
-  $('#badges').hide();
-  $('#history').hide();
-  $('#add-exercise').hide();
-  $('#settings').hide();
-
   function updateSection(selection, id) {
     if (!$(selection).hasClass('active')) {
       $(selection).siblings().attr('class', '');

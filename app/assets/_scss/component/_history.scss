@@ -34,8 +34,8 @@ tr {
   .box { margin-right: 0; }
 }
 .goal-info {
-  display: inline-block;
   @include position(relative, -3px 0 0 0);
+  display: inline-block;
   h4 {
     padding: 0;
   }

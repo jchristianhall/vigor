@@ -11,12 +11,12 @@
   }
   .plus-icon {
     @include transition(opacity 0.25s ease-in-out);
-    font-size: 32px;
-    font-weight: bold;
-    color: $accent-color;
-    cursor: pointer;
     float: right;
     margin: -4px 0 0 0;
+    color: $accent-color;
+    font-weight: bold;
+    font-size: 32px;
+    cursor: pointer;
     &:hover {
       opacity: 0.8;
     }
@@ -33,8 +33,8 @@
 #weight-progress-box {
   padding-left: $base-padding;
   input {
-    width: 6em;
     margin: 0 0 $base-padding $base-padding;
+    width: 6em;
     text-align: center;
   }
   .select-container {
@@ -55,6 +55,6 @@
 }
 
 #graph-range-info {
-  font-size: $small-font-size;
   padding-bottom: 2px;
+  font-size: $small-font-size;
 }
