@@ -44,6 +44,10 @@ $(document).ready(function () {
     $('.overlay').fadeIn();
   });
 
+  $('#exercise-list-box .plus-icon').click(function () {
+    $('#add-exercise').fadeIn();
+    $('.overlay').fadeIn();
+  });
 
 var options = {
         
