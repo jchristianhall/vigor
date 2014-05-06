@@ -3,16 +3,82 @@
 #badges-left {
   @include span-columns(3 of 10);
 }
-
+#badges-recent-box{
+	h3 {
+		display: inline-block;
+	}
+	.view-more {
+		float: right;
+	}
+  .box-base {
+    h3 {
+      display: block;
+      padding: $base-padding $base-padding $field-padding $base-padding;
+    }
+    .badge-text {
+      padding-bottom: $base-padding;
+    }
+  }
+}
+#badge2 {
+	@include retina-image('../img/badge2', 40px 40px);
+}
+#badge3 {
+	@include retina-image('../img/badge3', 40px 40px);
+}
+#badge4 {
+	@include retina-image('../img/badge4', 40px 40px);
+}
 /* Center Column
  * -----------------------------------------------------------------------------*/
 #badges-center {
   @include span-columns(3 of 10);
+}
+#badges-upcoming-box {
+	h3 {
+		display: inline-block;
+	}
+	.view-more {
+		float: right;
+	}
+  .box-base {
+    h3 {
+      display: block;
+      padding: $base-padding $base-padding $field-padding $base-padding;
+    }
+    .box-text {
+      display: inline-block;
+      padding-left: $base-padding;
+    }
+  }
+}
+#badge5 {
+	@include retina-image('../img/badge5', 40px 40px);
+}
+#badge6 {
+	@include retina-image('../img/badge6', 40px 40px);
+}
+#badge7 {
+	@include retina-image('../img/badge7', 40px 40px);
 }
 
 /* Right Column
  * -----------------------------------------------------------------------------*/
 #badges-right {
   @include span-columns(4 of 10);
-  .box { margin-right: 0; }
+	.box { margin-right: 0; }
+}
+#badges-all-box {
+	h3 {
+		display: inline-block;
+	}
+	.view-more {
+		float: right;
+	}
+}
+#badge2 {
+	@include retina-image('../img/badge2', 40px 40px);
+}
+#badge5 {
+	@include retina-image('../img/badge5', 40px 40px);
 }
