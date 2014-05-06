@@ -3,11 +3,81 @@
   <section id="exercise-left">
     <div class="box" id="exercise-list-box">
       <h3>Exercise List</h3>
+      <div class="icon plus-icon" id="add-exercise-icon"></div>
+      <div class="select-container" id="exercise-select">
+        <select>
+          <option>All</option>
+          <option>Cardio</option>
+          <option>Strength</option>
+          <option>Body Weight</option>
+          <option>Group</option>
+          <option>Other</option>
+        </select>
+        <div class="icon arrow-down-icon"></div>
+      </div>
+
+      <table>
+        <tr>
+          <th>
+            <span>
+              Type
+              <span class="filter-arrow"></span>
+            </span>
+          </th>
+          <th>
+            <span>Category</span>
+          </th>
+          <th>
+            <span>Actions</span>
+          </th>
+        </tr>
+        <tr>
+          <td>Curls (100 lb)</td>
+          <td>Strength</td>
+          <td>
+            <div class="icon edit-icon"></div>
+            <div class="icon cancel-icon"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Pushups</td>
+          <td>Strength</td>
+          <td>
+            <div class="icon edit-icon"></div>
+            <div class="icon cancel-icon"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Running</td>
+          <td>Cardio</td>
+          <td>
+            <div class="icon edit-icon"></div>
+            <div class="icon cancel-icon"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>Yoga</td>
+          <td>Group</td>
+          <td>
+            <div class="icon edit-icon"></div>
+            <div class="icon cancel-icon"></div>
+          </td>
+        </tr>
+      </table>
     </div>
   </section>
   <section id="exercise-right">
-    <div class="box" id="exercise-overview-box">
+    <div class="box box-content" id="exercise-overview-box">
       <h3>Overview</h3>
+      <canvas id="exercise-graph" width="400" height="250"></canvas>
+      <div class="select-container">
+        <select>
+          <option value="week">This Week</option>
+          <option value="month">This Month</option>
+          <option value="year">This Year</option>
+        </select>
+        <div class="icon arrow-down-icon"></div>
+      </div>
     </div>
   </section>
 </section>

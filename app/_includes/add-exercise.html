@@ -1,6 +1,83 @@
 <!-- Add Exercise -->
 <section class="modal-container" id="add-exercise">
-  <div class="box modal" id="add-exercise-modal">
+  <div class="box box-content modal" id="add-exercise-modal">
     <h3>Add Exercise</h3>
+
+    <span class="span-row" id="top">
+    	<div class="box-text" id="option-info">
+        Type
+      	</div>
+		<div class="select-container" id="type-select">
+		    <select>
+	    		<option value="Other">Other</option>
+	        </select>
+	        <div class="icon arrow-down-icon"></div>
+	  	</div>
+	  	<div class="input-container" id="detail">
+	      	<input type="text" name="detail">
+	  	</div> 
+  	</span>
+
+  	<span class="span-row" id="second">
+  		<div class="box-text" id="option-info">
+        Category
+      	</div>
+  		<div class="select-container left" id="category-select">
+		    <select>
+	    		<option value="Body Weight">Body Weight</option>
+	        </select>
+	        <div class="icon arrow-down-icon"></div>
+	  	</div>
+	</span>
+
+	<span class="span-row" id="third">
+		
+		<div class="box-text" id="option-info">
+        Style
+      	</div>
+  		<div class="select-container" id="style-select">
+		    <select>
+	    		<option value="Sets">Sets</option>
+	        </select>
+	        <div class="icon arrow-down-icon"></div>
+	  	</div>
+	  	
+
+	  	<div class="reps-container">
+		  	<div class="box-text" id="option-info">
+	        Reps
+	      	</div>
+	  		<div class="input-container">
+		      	<input class="small" type="text" name="reps">
+		  	</div>
+	  	</div>
+
+		<div class="sets-container">
+		  	<div class="box-text" id="option-info">
+	        Sets
+	      	</div>
+		  	<div class="input-container">
+		      	<input class="small" type="text" name="sets">
+		  	</div> 
+	  	</div> 
+  	</span>
+
+  	<span class="span-row" id="last">
+  		<div class="box-text" id="option-info">
+        Reminder
+      	</div>
+  		<div class="select-container" id="category-select">
+		    <select>
+	    		<option value="thirty_minutes">30 minutes before</option>
+	        </select>
+	        <div class="icon arrow-down-icon"></div>
+	  	</div>
+	</span>
+
+	<span class="span-row" id="bottom">
+  		<button type="submit">Add</button>
+  		<button>Cancel</button>
+	</span>
+
   </div>
 </section>

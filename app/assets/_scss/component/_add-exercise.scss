@@ -1,3 +1,35 @@
 #add-exercise-modal {
-  @include size(34em 50%);
+  @include size(28em 63%);
+
+  .small {
+  	width: 5.2em;
+  	margin-right: $base-padding;
+  }
+
+  .select-container {
+  	display: inline-block;
+  	width: 45%;
+  	margin-bottom: $base-padding;
+  }
+
+  button {
+  	width: 45%;
+  	float: right;
+  	&[type="submit"] {
+  		float: left;
+  	}
+  }
+
+  #option-info {
+  	font-size: $small-font-size;
+  	padding-bottom: 2px;
+  }
+
+  .sets-container, .reps-container, #detail {
+  	float: right;
+  }
+
+  .span-row {
+  	margin-bottom: $base-padding;
+  }
 }

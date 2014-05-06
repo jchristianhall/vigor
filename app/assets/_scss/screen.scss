@@ -20,7 +20,7 @@
 @import "base/utilities";
 @import "base/typography";
 @import "base/forms";
-// @import "base/tables";
+@import "base/tables";
 // @import "base/lists";
 // @import "base/flashes";
 @import "base/fonts";
@@ -41,4 +41,4 @@
 
 /* Pages
  * -----------------------------------------------------------------------------*/
-// @import "page/home";
+@import "page/login";

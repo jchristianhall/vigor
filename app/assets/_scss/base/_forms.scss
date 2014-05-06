@@ -1,6 +1,7 @@
 /* Input
  * -----------------------------------------------------------------------------*/
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   @include appearance(none);
   @include transition(border 0.25s ease-in-out);
   margin-bottom: $base-padding;
@@ -12,6 +13,16 @@ input[type="text"] {
   font-size: $base-font-size;
   &:focus {
     border: $active-border;
+  }
+}
+input[type="checkbox"] {
+  @include appearance(none);
+  @include retina-image('../img/unchecked', 20px 20px);
+  @include size(20px);
+  @include transition(all 0.25s ease-in-out);
+  margin-right: $field-padding;
+  &:checked {
+    @include retina-image('../img/checked', 20px 20px);
   }
 }
 
@@ -49,8 +60,8 @@ select {
   margin: 0;
   padding: $field-padding;
   width: 100%;
-  border: 0;
   outline: 0;
+  border: 0;
   border-radius: 0;
   background-color: $otherground-color;
   color: $base-color;
