@@ -48,4 +48,153 @@ $(document).ready(function () {
     $('#add-exercise').fadeIn();
     $('.overlay').fadeIn();
   });
+
+var options = {
+        
+  //Boolean - If we show the scale above the chart data     
+  scaleOverlay : false,
+  
+  //Boolean - If we want to override with a hard coded scale
+  scaleOverride : true,
+  
+  //** Required if scaleOverride is true **
+  //Number - The number of steps in a hard coded scale
+  scaleSteps : 5,
+  //Number - The value jump in the hard coded scale
+  scaleStepWidth : 5,
+  //Number - The scale starting value
+  scaleStartValue : 0,
+
+  //String - Colour of the scale line 
+  scaleLineColor : "rgba(0,0,0,.1)",
+  
+  //Number - Pixel width of the scale line  
+  scaleLineWidth : 1,
+
+  //Boolean - Whether to show labels on the scale 
+  scaleShowLabels : true,
+  
+  //Interpolated JS string - can access value
+  scaleLabel : "<%=value%>",
+  
+  //String - Scale label font declaration for the scale label
+  scaleFontFamily : "'Lato'",
+  
+  //Number - Scale label font size in pixels  
+  scaleFontSize : 12,
+  
+  //String - Scale label font weight style  
+  scaleFontStyle : "normal",
+  
+  //String - Scale label font colour  
+  scaleFontColor : "rgba(52, 73, 94, 1)",  
+  
+  ///Boolean - Whether grid lines are shown across the chart
+  scaleShowGridLines : true,
+  
+  //String - Colour of the grid lines
+  scaleGridLineColor : "rgba(0,0,0,.05)",
+  
+  //Number - Width of the grid lines
+  scaleGridLineWidth : 1, 
+  
+
+  //Boolean - If there is a stroke on each bar  
+  barShowStroke : true,
+  
+  //Number - Pixel width of the bar stroke  
+  barStrokeWidth : 1,
+  
+  //Number - Spacing between each of the X value sets
+  barValueSpacing : 12,
+  
+  //Number - Spacing between data sets within X values
+  barDatasetSpacing : 0,
+  
+  //Boolean - Whether to animate the chart
+  animation : true,
+
+  //Number - Number of animation steps
+  animationSteps : 60,
+  
+  //String - Animation easing effect
+  animationEasing : "easeOutQuart",
+
+  //Function - Fires when the animation is complete
+  onAnimationComplete : null
+  
+}
+  var data = {
+    labels : ["2/17/14","2/24/14","3/3/14"],
+    datasets : [
+    {
+      fillColor : "rgba(32,153,214,1)",
+      strokeColor : "rgba(32,153,214,1)",
+      data : [8,14,16],
+
+      mouseover: function(data) {
+          console.log(data);
+          console.log('over: look at me im in the data code!')
+      },
+      mouseout: function(data) {
+          console.log(data);
+          console.log('out: ook at me im in the data code!')
+      }
+    },
+
+    {
+      fillColor : "rgba(239,72,65,1)",
+      strokeColor : "rgba(239,72,65,1)",
+      data : [12,10,13],
+
+      mouseover: function(data) {
+          console.log(data);
+          console.log('over: look at me im in the data code!')
+      },
+      mouseout: function(data) {
+          console.log(data);
+          console.log('out: ook at me im in the data code!')
+      }
+    },
+
+    {
+      fillColor : "rgba(0,204,124,1)",
+      strokeColor : "rgba(0,204,124,1)",
+      data : [4,2,4],
+
+      mouseover: function(data) {
+          console.log(data);
+          console.log('over: look at me im in the data code!')
+      },
+      mouseout: function(data) {
+          console.log(data);
+          console.log('out: ook at me im in the data code!')
+      }
+    },
+
+    {
+      fillColor : "rgba(244,195,68,1)",
+      strokeColor : "rgba(244,195,68,1)",
+      data : [2,2,2],
+
+      mouseover: function(data) {
+          console.log(data);
+          console.log('over: look at me im in the data code!')
+      },
+      mouseout: function(data) {
+          console.log(data);
+          console.log('out: ook at me im in the data code!')
+      }
+    }
+    ]
+  }
+
+  var ctx = $("#exercise-graph").get(0).getContext("2d");
+  var weightChart = new Chart(ctx);
+
+  new Chart(ctx).Bar(data,options);
+
+
+
+     
 });
