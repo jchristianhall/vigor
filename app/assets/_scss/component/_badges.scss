@@ -23,7 +23,7 @@
 /* Center Column
  * -----------------------------------------------------------------------------*/
 #badges-center {
-  @include span-columns(4 of 10);
+  @include span-columns(3 of 10);
 }
 #badges-upcoming-box {
   h3 {
@@ -52,7 +52,7 @@
 /* Right Column
  * -----------------------------------------------------------------------------*/
 #badges-right {
-  @include span-columns(3 of 10);
+  @include span-columns(4 of 10);
   .box { margin-right: 0; }
 }
 #badges-all-box {
