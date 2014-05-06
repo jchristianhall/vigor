@@ -1,83 +1,101 @@
 <!-- Add Exercise -->
 <section class="modal-container" id="add-exercise">
-  <div class="box box-content modal" id="add-exercise-modal">
+  <div class="box modal" id="add-exercise-modal">
     <h3>Add Exercise</h3>
 
-    <span class="span-row" id="top">
-    	<div class="box-text" id="option-info">
-        Type
-      	</div>
-		<div class="select-container" id="type-select">
-		    <select>
-	    		<option value="Other">Other</option>
-	        </select>
-	        <div class="icon arrow-down-icon"></div>
-	  	</div>
-	  	<div class="input-container" id="detail">
-	      	<input type="text" name="detail">
-	  	</div>
-  	</span>
+    <div class="field-title">Type</div>
+    <div class="add-exercise-row">
+      <div class="add-exercise-type">
+        <div class="select-container">
+          <select>
+            <option>Running</option>
+            <option>Swimming</option>
+            <option>Biking</option>
+            <option>Sport</option>
+            <option>Weight</option>
+            <option>Other</option>
+          </select>
+          <div class="icon arrow-down-icon"></div>
+        </div>
+      </div>
+      <div class="add-exercise-other">
+        <input type="text" placeholder="Other Exercise">
+      </div>
+    </div>
 
-  	<span class="span-row" id="second">
-  		<div class="box-text" id="option-info">
-        Category
-      	</div>
-  		<div class="select-container left" id="category-select">
-		    <select>
-	    		<option value="Body Weight">Body Weight</option>
-	        </select>
-	        <div class="icon arrow-down-icon"></div>
-	  	</div>
-	</span>
+    <div class="field-title">Category</div>
+    <div class="add-exercise-row">
+      <div class="add-exercise-category">
+        <div class="select-container">
+          <select>
+            <option>Cardio</option>
+            <option>Strength</option>
+            <option>Body Weight</option>
+            <option>Group</option>
+            <option>Other</option>
+          </select>
+          <div class="icon arrow-down-icon"></div>
+        </div>
+      </div>
+    </div>
 
-	<span class="span-row" id="third">
+    <div class="field-title">Style</div>
+    <div class="add-exercise-row">
+      <div class="add-exercise-style">
+        <div class="select-container">
+          <select>
+            <option>Distance</option>
+            <option>Sets</option>
+            <option>Time</option>
+            <option>Completion</option>
+          </select>
+          <div class="icon arrow-down-icon"></div>
+        </div>
+      </div>
+      <div class="add-exercise-sets">
+        <div class="field-title">Sets</div>
+        <input type="text" placeholder="Sets">
+      </div>
+      <div class="add-exercise-reps">
+        <div class="field-title">Reps</div>
+        <input type="text" placeholder="Reps">
+      </div>
+    </div>
 
-		<div class="box-text" id="option-info">
-        Style
-      	</div>
-  		<div class="select-container" id="style-select">
-		    <select>
-	    		<option value="Sets">Sets</option>
-	        </select>
-	        <div class="icon arrow-down-icon"></div>
-	  	</div>
+    <div class="add-exercise-row">
+      <div class="field-title">Repeat</div>
+      <div class="add-exercise-repeat">
+        <div class="toggle">On</div>
+      </div>
+      <div class="add-exercise-days">
+        <div class="toggle">M</div>
+        <div class="toggle">T</div>
+        <div class="toggle">W</div>
+        <div class="toggle">T</div>
+        <div class="toggle">F</div>
+        <div class="toggle">S</div>
+        <div class="toggle">S</div>
+      </div>
+    </div>
 
+    <div class="field-title">Reminder</div>
+    <div class="add-exercise-row">
+      <div class="add-exercise-reminder">
+        <div class="select-container">
+          <select>
+            <option>15 minutes before</option>
+            <option>30 minutes before</option>
+            <option>1 hour before</option>
+          </select>
+          <div class="icon arrow-down-icon"></div>
+        </div>
+      </div>
+    </div>
 
-	  	<div class="reps-container">
-		  	<div class="box-text" id="option-info">
-	        Reps
-	      	</div>
-	  		<div class="input-container">
-		      	<input class="small" type="text" name="reps">
-		  	</div>
-	  	</div>
-
-		<div class="sets-container">
-		  	<div class="box-text" id="option-info">
-	        Sets
-	      	</div>
-		  	<div class="input-container">
-		      	<input class="small" type="text" name="sets">
-		  	</div>
-	  	</div>
-  	</span>
-
-  	<span class="span-row" id="last">
-  		<div class="box-text" id="option-info">
-        Reminder
-      	</div>
-  		<div class="select-container" id="category-select">
-		    <select>
-	    		<option value="thirty_minutes">30 minutes before</option>
-	        </select>
-	        <div class="icon arrow-down-icon"></div>
-	  	</div>
-	</span>
-
-	<span class="span-row" id="bottom">
-  		<button type="submit">Add</button>
-  		<button id="add-cancel">Cancel</button>
-	</span>
+    <div class="add-exercise-buttons">
+      <button type="submit" id="add-exercise-submit">Add</button>
+      <button id="add-exercise-cancel">Cancel</button>
+    </div>
 
   </div>
 </section>

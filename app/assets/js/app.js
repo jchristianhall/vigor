@@ -54,7 +54,7 @@ $(document).ready(function () {
     $('.overlay').fadeOut();
   });
 
-  $('#add-cancel').click(function () {
+  $('#add-exercise-cancel').click(function () {
     $('#add-exercise').fadeOut();
     $('.overlay').fadeOut();
   });
@@ -68,6 +68,23 @@ $(document).ready(function () {
     }
   });
 
+  // Add exercise controls
+  $('.add-exercise-type select').click(function () {
+    if ($('.add-exercise-type select option:selected').text() === 'Other') {
+      $('.add-exercise-other').fadeIn();
+    } else {
+      $('.add-exercise-other').fadeOut();
+    }
+  });
+  $('.add-exercise-style select').click(function () {
+    if ($('.add-exercise-style select option:selected').text() === 'Sets') {
+      $('.add-exercise-sets').fadeIn();
+      $('.add-exercise-reps').fadeIn();
+    } else {
+      $('.add-exercise-sets').fadeOut();
+      $('.add-exercise-reps').fadeOut();
+    }
+  });
 
   var optionsLine = {
 

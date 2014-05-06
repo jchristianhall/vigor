@@ -1,35 +1,50 @@
+/* MOAR HORRIBLE SASS */
 #add-exercise-modal {
-  @include size(28em 63%);
-
-  .small {
-  	width: 5.2em;
-  	margin-right: $base-padding;
+  max-width: 460px;
+  select {
+    @include size(180px 40px);
   }
-
-  .select-container {
-  	display: inline-block;
-  	width: 45%;
-  	margin-bottom: $base-padding;
+  input {
+    margin-bottom: 0;
+    padding: 8px;
+    height: 40px;
   }
-
+  .arrow-down-icon {
+    @include position(absolute, 5px -15px 0 0);
+  }
+  .toggle {
+    display: inline-block;
+  }
+}
+.add-exercise-row {
+  position: relative;
+  margin-bottom: $base-padding;
+}
+.add-exercise-other {
+  @include position(absolute, 0px 0px 0 0);
+  display: none;
+  input { width: 180px; }
+}
+.add-exercise-sets {
+  @include position(absolute, -18px 100px 0 0);
+  display: none;
+  width: 80px;
+}
+.add-exercise-reps {
+  @include position(absolute, -18px 0px 0 0);
+  display: none;
+  width: 80px;
+}
+.add-exercise-days {
+  margin-top: $base-padding;
+}
+.add-exercise-buttons {
+  position: relative;
   button {
-  	width: 45%;
-  	float: right;
-  	&[type="submit"] {
-  		float: left;
-  	}
-  }
-
-  #option-info {
-  	font-size: $small-font-size;
-  	padding-bottom: 2px;
-  }
-
-  .sets-container, .reps-container, #detail {
-  	float: right;
-  }
-
-  .span-row {
-  	margin-bottom: $base-padding;
+    margin-bottom: 0;
+    width: 180px;
+    &:last-child {
+      @include position(absolute, 0px 0px 0 0);
+    }
   }
 }
