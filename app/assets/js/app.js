@@ -44,6 +44,11 @@ $(document).ready(function () {
     $('.overlay').fadeIn();
   });
 
+$('#exercise-list-box .plus-icon').click(function () {
+    $('#add-exercise').fadeIn();
+    $('.overlay').fadeIn();
+  });
+
   var optionsLine = {
           
     //Boolean - If we show the scale above the chart data     
@@ -127,7 +132,8 @@ $(document).ready(function () {
     onAnimationComplete : null
     
   }
-  var data = {
+
+  var dataLine = {
     labels : ["3/8","3/9","3/10","3/11","3/12","3/13","3/14"],
     datasets : [{
       fillColor : "rgba(220,220,220,0.5)",
@@ -147,10 +153,10 @@ $(document).ready(function () {
     }]
   }
 
-  var ctx = $("#weight-graph").get(0).getContext("2d");
-  var weightChart = new Chart(ctx);
+  var ctxLine = $("#weight-graph").get(0).getContext("2d");
+  var weightChart = new Chart(ctxLine);
 
-  new Chart(ctx).Line(data,optionsLine);
+  new Chart(ctxLine).Line(dataLine,optionsLine);
 
 
 var optionsBar = {
@@ -228,7 +234,7 @@ var optionsBar = {
   onAnimationComplete : null
   
 }
-  var data = {
+  var dataBar = {
     labels : ["2/17/14","2/24/14","3/3/14"],
     datasets : [
     {
@@ -293,8 +299,8 @@ var optionsBar = {
     ]
   }
 
-  var ctx = $("#exercise-graph").get(0).getContext("2d");
-  var weightChart = new Chart(ctx);
+  var ctxBar = $("#exercise-graph").get(0).getContext("2d");
+  var exerciseChart = new Chart(ctxBar);
 
-  new Chart(ctx).Bar(data,optionsBar);
+  new Chart(ctxBar).Bar(dataBar,optionsBar);
 });
