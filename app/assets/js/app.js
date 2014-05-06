@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('#content > section').hide();
         $(id).show();
         $(id).removeClass().addClass('slide-in');
-      }, 500);
+      }, 250);
     }
   }
 
@@ -35,22 +35,26 @@ $(document).ready(function () {
   });
 
   $('.cog-icon').click(function () {
-    $('#settings').fadeIn();
+    $('#settings').show();
+    $('#settings').removeClass('fall-out').addClass('fall-in');
     $('.overlay').fadeIn();
   });
 
   $('#exercise-list-box .plus-icon').click(function () {
-    $('#add-exercise').fadeIn();
+    $('#add-exercise').show();
+    $('#add-exercise').removeClass('fall-out').addClass('fall-in');
     $('.overlay').fadeIn();
   });
 
   $('#settings-cancel').click(function () {
-    $('#settings').fadeOut();
+    $('#settings').removeClass('fall-in').addClass('fall-out');
+    setTimeout(function () {$('#settings').hide(); }, 250);
     $('.overlay').fadeOut();
   });
 
   $('#add-exercise-cancel').click(function () {
-    $('#add-exercise').fadeOut();
+    $('#add-exercise').removeClass('fall-in').addClass('fall-out');
+    setTimeout(function () {$('#add-exercise').hide(); }, 250);
     $('.overlay').fadeOut();
   });
 
