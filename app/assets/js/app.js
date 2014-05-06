@@ -5,8 +5,12 @@ $(document).ready(function () {
     if (!$(selection).hasClass('active')) {
       $(selection).siblings().attr('class', '');
       $(selection).attr('class', 'active');
-      $('#content > section').fadeOut();
-      setTimeout(function () { $(id).fadeIn(); }, 500);
+      $('#content > section').removeClass().addClass('slide-out');
+      setTimeout(function () {
+        $('#content > section').hide();
+        $(id).show();
+        $(id).removeClass().addClass('slide-in');
+      }, 500);
     }
   }
 

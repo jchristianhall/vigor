@@ -4,17 +4,30 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-@include keyframes(slide) {
+@include keyframes(slide-in) {
   0% {
-    @include transform(translateY(30px));
+    @include transform(translateX(30px));
     opacity: 0;
   }
   100% {
-    @include transform(translateY(0px));
+    @include transform(translateX(0px));
     opacity: 1;
   }
 }
+@include keyframes(slide-out) {
+  0% {
+    @include transform(translateX(0px));
+    opacity: 1;
+  }
+  100% {
+    @include transform(translateX(-30px));
+    opacity: 0;
+  }
+}
 
-.slide {
-  @include animation(slide 1s ease-in-out);
+.slide-in {
+  @include animation(slide-in 0.5s ease-in-out);
+}
+.slide-out {
+  @include animation(slide-out 0.5s ease-in-out);
 }
