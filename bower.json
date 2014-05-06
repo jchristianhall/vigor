@@ -9,7 +9,7 @@
     "jquery": "~2.0.3",
     "selectivizr": "~1.0.2",
     "respond": "~1.4.2",
-    "Chart": "https://github.com/sgarbesi/Chart.js"
+    "Chart.js": "git@github.com:Regaddi/Chart.js.git"
   },
   "devDependencies": {}
 }
