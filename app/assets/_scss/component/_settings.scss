@@ -1,3 +1,88 @@
+/* The worst Sass I will ever write */
 #settings-modal {
-  @include size(68em 50%);
+  @include outer-container();
+  select { width: 180px; }
+  .arrow-down-icon {
+    @include position(absolute, 5px -15px 0 0);
+  }
+}
+.settings-row {
+  position: relative;
+}
+.settings-buttons {
+  margin: 0 auto;
+  width: 400px;
+}
+#settings-submit {
+  margin: 0 17px 0 0;
+  width: 180px;
+}
+#settings-cancel {
+  margin-bottom: 0;
+  width: 180px;
+}
+
+/* Left column
+ * -----------------------------------------------------------------------------*/
+#settings-left {
+  @include span-columns(5 of 10);
+  padding-right: $base-padding;
+}
+.settings-avatar {
+  button {
+    width: 180px;
+  }
+  .avatar-large {
+    @include retina-image('../img/avatar-large', 102px 102px);
+    @include size(102px 102px);
+    @include position(relative, -60px 40px 0 0);
+    float: right;
+  }
+}
+.settings-name {
+  width: 100%;
+  input {
+    margin-bottom: $field-padding;
+    width: 180px;
+    &:last-child {
+      @include position(absolute, 0px 0px 0 0);
+    }
+  }
+}
+.settings-sex {
+  margin-bottom: $field-padding;
+}
+.settings-age {
+  @include position(absolute, 0px 20px 0 0);
+  margin-bottom: $field-padding;
+}
+.settings-password {
+  input {
+    margin-bottom: $field-padding;
+    width: 180px;
+  }
+}
+
+/* Right column
+ * -----------------------------------------------------------------------------*/
+#settings-right {
+  @include span-columns(5 of 10);
+  padding: 0;
+}
+.settings-opt {
+  margin-bottom: 68px;
+}
+.settings-reminders {
+  margin-bottom: $field-padding;
+}
+.settings-period {
+  @include position(absolute, 0px 20px 0 0);
+  margin-bottom: $field-padding;
+}
+.settings-preferences {
+  margin-bottom: $field-padding;
+}
+.settings-measurement {
+  @include position(absolute, 0px 20px 0 0);
+  margin-bottom: $field-padding;
 }

@@ -25,12 +25,31 @@ input[type="checkbox"] {
     @include retina-image('../img/checked', 20px 20px);
   }
 }
+.toggle {
+  @include transition(background-color 0.25s ease-in-out);
+  padding: $field-padding;
+  background-color: $base-color;
+  color: $foreground-color;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+.toggle-active {
+  background-color: $accent-color;
+  &:hover {
+    background-color: $base-color;
+  }
+}
+
 
  /* Button
  * -----------------------------------------------------------------------------*/
 button {
   @include appearance(none);
-  @include transition(opacity 0.25s ease-in-out);
+  @include transition(background-color 0.25s ease-in-out);
   margin-bottom: $base-padding;
   padding: $field-padding;
   width: 100%;
@@ -40,12 +59,16 @@ button {
   color: $foreground-color;
   font-weight: 700;
   font-size: $base-font-size;
+  opacity: 1;
   &:hover {
-    opacity: 0.8;
+    background-color: rgba(52, 73, 94, 0.8);;
   }
   &[type="submit"] {
     background-color: $accent-color;
     color: $foreground-color;
+    &:hover {
+      background-color: rgba(231, 139, 67, 0.8);;
+    }
   }
 }
 
