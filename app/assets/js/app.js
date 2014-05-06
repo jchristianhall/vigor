@@ -44,19 +44,39 @@ $(document).ready(function () {
     $('.overlay').fadeIn();
   });
 
-$('#exercise-list-box .plus-icon').click(function () {
+  $('#exercise-list-box .plus-icon').click(function () {
     $('#add-exercise').fadeIn();
     $('.overlay').fadeIn();
   });
 
+  $('#settings-cancel').click(function () {
+    $('#settings').fadeOut();
+    $('.overlay').fadeOut();
+  });
+
+  $('#add-cancel').click(function () {
+    $('#add-exercise').fadeOut();
+    $('.overlay').fadeOut();
+  });
+
+  // Toggle controls
+  $('.toggle').click(function () {
+    if (!$(this).hasClass('toggle-active')) {
+      $(this).addClass('toggle-active');
+    } else {
+      $(this).removeClass('toggle-active');
+    }
+  });
+
+
   var optionsLine = {
-          
-    //Boolean - If we show the scale above the chart data     
+
+    //Boolean - If we show the scale above the chart data
     scaleOverlay : false,
-    
+
     //Boolean - If we want to override with a hard coded scale
     scaleOverride : true,
-    
+
     //** Required if scaleOverride is true **
     //Number - The number of steps in a hard coded scale
     scaleSteps : 4,
@@ -65,72 +85,72 @@ $('#exercise-list-box .plus-icon').click(function () {
     //Number - The scale starting value
     scaleStartValue : 120,
 
-    //String - Colour of the scale line 
+    //String - Colour of the scale line
     scaleLineColor : "rgba(0,0,0,.1)",
-    
-    //Number - Pixel width of the scale line  
+
+    //Number - Pixel width of the scale line
     scaleLineWidth : 1,
 
-    //Boolean - Whether to show labels on the scale 
+    //Boolean - Whether to show labels on the scale
     scaleShowLabels : true,
-    
+
     //Interpolated JS string - can access value
     scaleLabel : "<%=value%>",
-    
+
     //String - Scale label font declaration for the scale label
     scaleFontFamily : "'Lato'",
-    
-    //Number - Scale label font size in pixels  
+
+    //Number - Scale label font size in pixels
     scaleFontSize : 12,
-    
-    //String - Scale label font weight style  
+
+    //String - Scale label font weight style
     scaleFontStyle : "normal",
-    
-    //String - Scale label font colour  
-    scaleFontColor : "rgba(52, 73, 94, 1)",  
-    
+
+    //String - Scale label font colour
+    scaleFontColor : "rgba(52, 73, 94, 1)",
+
     ///Boolean - Whether grid lines are shown across the chart
     scaleShowGridLines : true,
-    
+
     //String - Colour of the grid lines
     scaleGridLineColor : "rgba(0,0,0,.05)",
-    
+
     //Number - Width of the grid lines
-    scaleGridLineWidth : 1, 
-    
+    scaleGridLineWidth : 1,
+
     //Boolean - Whether the line is curved between points
     bezierCurve : false,
-    
+
     //Boolean - Whether to show a dot for each point
     pointDot : true,
-    
+
     //Number - Radius of each point dot in pixels
     pointDotRadius : 3,
-    
+
     //Number - Pixel width of point dot stroke
     pointDotStrokeWidth : 1,
-    
+
     //Boolean - Whether to show a stroke for datasets
     datasetStroke : true,
-    
+
     //Number - Pixel width of dataset stroke
     datasetStrokeWidth : 2,
-    
+
     //Boolean - Whether to fill the dataset with a colour
     datasetFill : true,
-    
+
     //Boolean - Whether to animate the chart
     animation : true,
 
     //Number - Number of animation steps
     animationSteps : 60,
-    
+
     //String - Animation easing effect
     animationEasing : "easeOutQuart",
 
     //Function - Fires when the animation is complete
     onAnimationComplete : null
-    
+
   }
 
   var dataLine = {
@@ -160,13 +180,13 @@ $('#exercise-list-box .plus-icon').click(function () {
 
 
 var optionsBar = {
-        
-  //Boolean - If we show the scale above the chart data     
+
+  //Boolean - If we show the scale above the chart data
   scaleOverlay : false,
-  
+
   //Boolean - If we want to override with a hard coded scale
   scaleOverride : true,
-  
+
   //** Required if scaleOverride is true **
   //Number - The number of steps in a hard coded scale
   scaleSteps : 5,
@@ -175,64 +195,64 @@ var optionsBar = {
   //Number - The scale starting value
   scaleStartValue : 0,
 
-  //String - Colour of the scale line 
+  //String - Colour of the scale line
   scaleLineColor : "rgba(0,0,0,.1)",
-  
-  //Number - Pixel width of the scale line  
+
+  //Number - Pixel width of the scale line
   scaleLineWidth : 1,
 
-  //Boolean - Whether to show labels on the scale 
+  //Boolean - Whether to show labels on the scale
   scaleShowLabels : true,
-  
+
   //Interpolated JS string - can access value
   scaleLabel : "<%=value%>",
-  
+
   //String - Scale label font declaration for the scale label
   scaleFontFamily : "'Lato'",
-  
-  //Number - Scale label font size in pixels  
+
+  //Number - Scale label font size in pixels
   scaleFontSize : 12,
-  
-  //String - Scale label font weight style  
+
+  //String - Scale label font weight style
   scaleFontStyle : "normal",
-  
-  //String - Scale label font colour  
-  scaleFontColor : "rgba(52, 73, 94, 1)",  
-  
+
+  //String - Scale label font colour
+  scaleFontColor : "rgba(52, 73, 94, 1)",
+
   ///Boolean - Whether grid lines are shown across the chart
   scaleShowGridLines : true,
-  
+
   //String - Colour of the grid lines
   scaleGridLineColor : "rgba(0,0,0,.05)",
-  
-  //Number - Width of the grid lines
-  scaleGridLineWidth : 1, 
-  
 
-  //Boolean - If there is a stroke on each bar  
+  //Number - Width of the grid lines
+  scaleGridLineWidth : 1,
+
+
+  //Boolean - If there is a stroke on each bar
   barShowStroke : true,
-  
-  //Number - Pixel width of the bar stroke  
+
+  //Number - Pixel width of the bar stroke
   barStrokeWidth : 1,
-  
+
   //Number - Spacing between each of the X value sets
   barValueSpacing : 12,
-  
+
   //Number - Spacing between data sets within X values
   barDatasetSpacing : 0,
-  
+
   //Boolean - Whether to animate the chart
   animation : true,
 
   //Number - Number of animation steps
   animationSteps : 60,
-  
+
   //String - Animation easing effect
   animationEasing : "easeOutQuart",
 
   //Function - Fires when the animation is complete
   onAnimationComplete : null
-  
+
 }
   var dataBar = {
     labels : ["2/17/14","2/24/14","3/3/14"],
