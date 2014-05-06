@@ -2,5 +2,133 @@
 <section class="modal-container" id="settings">
   <div class="box modal" id="settings-modal">
     <h3>Settings</h3>
+
+    <section id="settings-left">
+      <h5>Profile</h5>
+
+      <div class="field-title">Avatar</div>
+      <div class="settings-row">
+        <div class="settings-avatar">
+          <button>Choose new image</button>
+          <div class="avatar-large"></div>
+        </div>
+      </div>
+
+      <div class="field-title">Name</div>
+      <div class="settings-row">
+        <div class="settings-name">
+          <input type="text" placeholder="First">
+          <input type="text" placeholder="Last">
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <div class="field-title">Sex</div>
+        <div class="settings-sex">
+          <div class="select-container">
+            <select>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <div class="icon arrow-down-icon"></div>
+          </div>
+        </div>
+        <div class="settings-age">
+          <div class="field-title">Age Group</div>
+          <div class="select-container">
+            <select>
+              <option>13-25</option>
+              <option>26-35</option>
+              <option>36-45</option>
+              <option>46-55</option>
+            </select>
+            <div class="icon arrow-down-icon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="field-title">Email</div>
+      <div class="settings-row">
+        <div class="settings-email">
+          <input type="text" placeholder="Email">
+        </div>
+      </div>
+
+      <div class="field-title">Password</div>
+      <div class="settings-row">
+        <div class="settings-password">
+          <input type="password" placeholder="Current password">
+          <input type="password" placeholder="New password">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="settings-right">
+      <h5>Goal Reminders</h5>
+
+      <div class="settings-row">
+        <div class="settings-reminders">
+          <div class="field-title">Reminder Method</div>
+          <div class="select-container">
+            <select>
+              <option>Email</option>
+              <option>Phone</option>
+              <option>Email and phone</option>
+            </select>
+            <div class="icon arrow-down-icon"></div>
+          </div>
+        </div>
+        <div class="settings-period">
+          <div class="field-title">Reminder Period</div>
+          <div class="select-container">
+            <select>
+              <option>13-25</option>
+              <option>26-35</option>
+              <option>36-45</option>
+              <option>46-55</option>
+            </select>
+            <div class="icon arrow-down-icon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="field-title">Opt Out</div>
+      <div class="settings-opt">
+        <div class="toggle">On</div>
+      </div>
+
+      <h5>Preferences</h5>
+      <div class="settings-row">
+        <div class="settings-preferences">
+          <div class="field-title">Goal Type</div>
+          <div class="select-container">
+            <select>
+              <option>Weight</option>
+              <option>Calories</option>
+            </select>
+            <div class="icon arrow-down-icon"></div>
+          </div>
+        </div>
+        <div class="settings-measurement">
+          <div class="field-title">Measurement System</div>
+          <div class="select-container">
+            <select>
+              <option>Imperial</option>
+              <option>Metric</option>
+            </select>
+            <div class="icon arrow-down-icon"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="settings-buttons">
+      <button type="submit" id="settings-submit">Update</button>
+      <button id="settings-cancel">Cancel</button>
+    </div>
+
   </div>
 </section>

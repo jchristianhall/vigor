@@ -23,6 +23,12 @@ h4 {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
+h5 {
+  padding-bottom: $base-padding;
+  font-size: $base-font-size;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
 
 .box-text {
   margin: 0;
@@ -31,4 +37,8 @@ h4 {
 .badge-text {
   @include position(relative, -13px 0 0 0);
   display: inline-block;
+}
+.field-title {
+  font-size: $small-font-size;
+  padding-bottom: 2px;
 }
