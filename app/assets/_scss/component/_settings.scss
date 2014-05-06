@@ -68,9 +68,12 @@
 #settings-right {
   @include span-columns(5 of 10);
   padding: 0;
+  .settings-row:nth-child(3) {
+    margin-top: 18px;
+  }
 }
 .settings-opt {
-  margin-bottom: 68px;
+  margin-bottom: 44px;
 }
 .settings-reminders {
   margin-bottom: $field-padding;
