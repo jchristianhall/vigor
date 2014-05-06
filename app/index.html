@@ -1,10 +1,17 @@
 ---
-layout: default
-title: Vigor
+layout: login
+title: Login | Vigor
 ---
-
-{% include today.html %}
-{% include exercise.html %}
-{% include weight.html %}
-{% include badges.html %}
-{% include history.html %}
+<section id="login">
+  <div class="login-box">
+    <div class="login-logo-container">
+      <div class="logo"></div>
+      <h1>Vigor</h1>
+    </div>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <div class="forgot">Forgot your password?</div>
+    <button>Sign Up</button>
+    <a href={{ site.baseurl }}{{ 'home' }}><button type="submit">Log in</button></a>
+  </div>
+</section>
