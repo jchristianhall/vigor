@@ -4,81 +4,71 @@
   @include span-columns(3 of 10);
 }
 #badges-recent-box{
-	h3 {
-		display: inline-block;
-	}
-	.view-more {
-		float: right;
-	}
-  .box-base {
-    h3 {
-      display: block;
-      padding: $base-padding $base-padding $field-padding $base-padding;
-    }
-    .badge-text {
-      padding-bottom: $base-padding;
-    }
+  h3 {
+    display: inline-block;
   }
 }
-#badge2 {
-	@include retina-image('../img/badge2', 40px 40px);
+.view-more {
+  @include transition(opacity 0.25s ease-in-out);
+  float: right;
+  margin-top: 5px;
+  color: $accent-color;
+  font-size: $small-font-size;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
 }
-#badge3 {
-	@include retina-image('../img/badge3', 40px 40px);
-}
-#badge4 {
-	@include retina-image('../img/badge4', 40px 40px);
-}
+
 /* Center Column
  * -----------------------------------------------------------------------------*/
 #badges-center {
-  @include span-columns(3 of 10);
+  @include span-columns(4 of 10);
 }
 #badges-upcoming-box {
-	h3 {
-		display: inline-block;
-	}
-	.view-more {
-		float: right;
-	}
-  .box-base {
-    h3 {
-      display: block;
-      padding: $base-padding $base-padding $field-padding $base-padding;
+  h3 {
+    display: inline-block;
+  }
+  .box-row {
+    &:first-child {
+      .progress-bar {
+        width: 200px;
+      }
     }
-    .box-text {
-      display: inline-block;
-      padding-left: $base-padding;
+    &:nth-child(2) {
+      .progress-bar {
+        width: 130px;
+      }
+    }
+    &:nth-child(3) {
+      .progress-bar {
+        width: 70px;
+      }
     }
   }
 }
-#badge5 {
-	@include retina-image('../img/badge5', 40px 40px);
-}
-#badge6 {
-	@include retina-image('../img/badge6', 40px 40px);
-}
-#badge7 {
-	@include retina-image('../img/badge7', 40px 40px);
-}
+
 
 /* Right Column
  * -----------------------------------------------------------------------------*/
 #badges-right {
-  @include span-columns(4 of 10);
-	.box { margin-right: 0; }
+  @include span-columns(3 of 10);
+  .box { margin-right: 0; }
 }
 #badges-all-box {
-	h3 {
-		display: inline-block;
-	}
-	.view-more {
-		float: right;
-	}
-}
-#badge2 {
-	@include retina-image('../img/badge2', 40px 40px);
-}
-#badge5 {
-	@include retina-image('../img/badge5', 40px 40px);
+  h3 {
+    display: inline-block;
+  }
+  .box-row {
+    &:nth-child(2) {
+      .progress-bar {
+        width: 100px;
+      }
+    }
+    &:nth-child(3) {
+      .progress-bar {
+        width: 50px;
+      }
+    }
+  }
 }
